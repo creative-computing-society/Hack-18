@@ -47,7 +47,7 @@
 		if($rn2 == '') $rn2 = 0;
 		if($rn3 == '') $rn3 = 0;
 		$link = mysqli_connect('localhost', 'root', 'password','hack182');
-		$query = "INSERT INTO USERS (T_NAME, N1, N2, N3, R1, R2, R3, PHONE, MAIL) VALUES ('".$team_name."', '".$nm1."', '".$nm2."', '".$nm3."', '".$rn1."', '".$rn2."', '".$rn3."', '".$contact."', '".$email."');";
+		$query = "INSERT INTO USERS (T_NAME, N1, N2, N3, R1, R2, R3, PHONE, MAIL) VALUES ('".$team_name."', '".$nm1."', '".$nm2."', '".$nm3."', ".$rn1.", ".$rn2.", ".$rn3.", ".$contact.", '".$email."');";
 		if(mysqli_query($link, $query)){
 			$message = $message."Added Successfully";
 		}else{

@@ -465,7 +465,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-5">
           <div class="panel">
-            <form id="form1">
+            <form method="POST" action="submit.php" id="form1">
               <div class="alert alert-success alert-dismissable">
                 <a class="close" data-dismiss="alert">&times;</a>
                 <strong>( *) marked fields are important !</strong>
