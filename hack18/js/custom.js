@@ -144,4 +144,17 @@ jQuery(document).ready(function( $ ) {
       return false;
   });
 
+  $('#form1').submit(function() {
+    event.preventDefault();
+    $.post("submit.php", {tName: $("#tName").val(), nm1: $("#nm1").val(), rn1: $("#rn1").val(), nm2: $("#nm2").val(), rn2: $("#rn2").val(), nm3: $("#nm3").val(), rn3: $("#rn3").val(), cntctnm: $("#cntctnm").val(), email: $("#email").val()}, function(data){
+          var succ_data = "Added Successfully";
+          if(data.localeCompare(succ_data)==0){
+            $(".alr-msg").removeClass("alert-danger");
+            $(".alr-msg").addClass("alert-success");
+          }
+          $("#msg").html(data);
+          $(".alr-msg").css('display','block');
+    });
+  });
+
 });

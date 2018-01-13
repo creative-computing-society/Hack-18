@@ -15,6 +15,13 @@ body {
   padding:50px 50px 50px 70px;
 }
 
+.alr-msg{
+    max-width:100%;
+    margin:0 auto;
+    display:none;
+    margin-top:3%;
+}
+
 @media (max-width: 768px) {
   .panel{
     padding:50px 5px 50px 5px;
@@ -95,9 +102,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ccs-logo{
-  max-width:200px;
-  max-height:250px;
-  margin-top:-3%;
+  max-width:250px;
+  max-height:200px;
+}
+
+.ccs_logo{
+  background:rgba(255,255,255,0.2);
+  margin:0 auto;
+  max-width:250px;
+  max-height:200px;
+  box-shadow: 0 0 10px #fff;
 }
 
 #hero {
@@ -176,7 +190,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-top:-20%;
   }
   #hero .ccs-logo{
-    margin-left:10px;
+    max-width:150px;
+    max-height:100px;
+  }
+  #hero .ccs_logo{
+    background:rgba(255,255,255,0.2);
+    margin:0 auto;
+    max-width:150px;
+    max-height:100px;
   }
   #hero #venue{
     margin-top:-8%;
