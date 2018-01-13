@@ -151,6 +151,15 @@ jQuery(document).ready(function( $ ) {
           if(data.localeCompare(succ_data)==0){
             $(".alr-msg").removeClass("alert-danger");
             $(".alr-msg").addClass("alert-success");
+            $('#tName').val()="";
+            $('#nm1').val()="";
+            $('#rn1').val()="";
+            $('#nm2').val()="";
+            $('#rn2').val()="";
+            $('#nm3').val()="";
+            $('#rn3').val()="";
+            $('#cntctnm').val()="";
+            $('#email').val()="";
           }
           $("#msg").html(data);
           $(".alr-msg").css('display','block');
