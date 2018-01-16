@@ -98,20 +98,19 @@ h1, h2, h3, h4, h5, h6 {
 # Welcome
 --------------------------------------------------------------*/
 .main_logo{
-    margin-top:-7%;
+    margin-top:-10%;
 }
 
 .ccs-logo{
-  max-width:250px;
-  max-height:200px;
+  max-width:300px;
+  max-height:250px;
 }
 
 .ccs_logo{
-  background:rgba(255,255,255,0.2);
   margin:0 auto;
-  max-width:250px;
-  max-height:200px;
-  box-shadow: 0 0 10px #fff;
+  max-width:300px;
+  max-height:250px;
+  margin-top:-5%;
 }
 
 #hero {
@@ -150,7 +149,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h3 {
-  margin-top:-3%;
   font-weight: 750;
   line-height: 48px;
   text-transform: uppercase;
@@ -174,7 +172,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #999;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -187,17 +184,17 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
   #hero .main_logo{
-    margin-top:-20%;
+    margin-top:-25%;
   }
   #hero .ccs-logo{
-    max-width:150px;
-    max-height:100px;
+    max-width:250px;
+    max-height:200px;
   }
   #hero .ccs_logo{
-    background:rgba(255,255,255,0.2);
     margin:0 auto;
-    max-width:150px;
-    max-height:100px;
+    max-width:250px;
+    max-height:200px;
+    margin-top:-10%;
   }
   #hero #venue{
     margin-top:-8%;
@@ -244,14 +241,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .canv_cont{
-  z-index: -20;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;`
+    z-index: -20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 /*--------------------------------------------------------------
 # Header
@@ -566,7 +564,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-content {
   background: #fff;
   font-size: 1.500em;
-  width:85%;
   /* font-family: 'Share Tech Mono', sans-serif; */
   font-family: 'Aldrich', sans-serif;
 }
@@ -575,11 +572,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
   font-weight: 700;
   font-size: 28px;
+  text-align:center;
 }
 
 #about .about-text {
   line-height: 26px;
   margin-top:3%;
+  text-align:justify;
 }
 
 #about .about-text:last-child {
@@ -746,7 +745,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: left;
 }
 #timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
-  color: #e2001a;
+  color: #468c1f;
   font-size: 1.3em;
 }
 
@@ -824,12 +823,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #detail .row{
   font-family: 'Aldrich', sans-serif;
   font-size:1.2em;
+  text-align:justify;
 }
 /* register Section
 --------------------------------*/
 #register {
   background-size:cover;
-  background-image: url("../img/reg.jpg");
+  background-color:#fff;
   padding: 80px 0;
 }
 
@@ -844,6 +844,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   height: 260px;
   width: 260px;
+}
+
+.btn-reg{
+  border: 2px solid #03C4EB;
+  color: #03C4EB;
+  padding:5px;
+}
+
+#register a{
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.btn-reg:hover{
+  background: #03C4EB;
+  border: 2px solid #03C4EB;
+  color:white;
+}
+
+#register .col-md-12{
+    text-align: center;
 }
 
 #register .profile .pic img {
@@ -1008,6 +1037,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info {
   color: #333333;
+  width:25%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px){
+  #contact .info{
+    width:100%;
+  }
+}
+
+#contact .info-sub{
+  width:50%;
+  margin:0 auto;
 }
 
 #contact .info i {

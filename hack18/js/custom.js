@@ -12,30 +12,38 @@ jQuery(document).ready(function( $ ) {
       {
         breakpoint: 2000,
         options: {
-          maxParticles: 200,
+          maxParticles: 300,
           sizeVariations:8,
-          speed:0.7,
-          color: '#48F2E3',
+          speed:0.8,
+          color: '#03C4EB',
           connectParticles: false
         }
       }, {
         breakpoint: 768,
         options: {
-          maxParticles: 50,
-          color: '#48F2E3',
+          maxParticles: 60,
+          speed:0.7,
+          sizeVariations:6,
+          color: '#03C4EB',
           connectParticles: true
         }
       }, {
         breakpoint: 425,
         options: {
-          color:'#48F2E3',
-          maxParticles: 50,
+          color:'#03C4EB',
+          speed:0.7,
+          sizeVariations:6,
+          maxParticles: 60,
           connectParticles: true
         }
       }, {
           breakpoint: 320,
           options: {
-              maxParticles: 0 // disables particles.js
+            color:'#03C4EB',
+            maxParticles: 60,
+            sizeVariations:6,
+            speed:0.7,
+            connectParticles: true// disables particles.js
             }
           }
         ]
@@ -151,15 +159,15 @@ jQuery(document).ready(function( $ ) {
           if(data.localeCompare(succ_data)==0){
             $(".alr-msg").removeClass("alert-danger");
             $(".alr-msg").addClass("alert-success");
-            $('#tName').val()="";
-            $('#nm1').val()="";
-            $('#rn1').val()="";
-            $('#nm2').val()="";
-            $('#rn2').val()="";
-            $('#nm3').val()="";
-            $('#rn3').val()="";
-            $('#cntctnm').val()="";
-            $('#email').val()="";
+            $('#tName').val("");
+            $('#nm1').val("");
+            $('#rn1').val("");
+            $('#nm2').val("");
+            $('#rn2').val("");
+            $('#nm3').val("");
+            $('#rn3').val("");
+            $('#cntctnm').val("");
+            $('#email').val("");
           }
           $("#msg").html(data);
           $(".alr-msg").css('display','block');
